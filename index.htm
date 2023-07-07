@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn/SignUp</title>
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+  </head>
+  <body>
+    <div id="page">
+      <h1>Sign up or Sign in</h1>
+      <p class="gray">
+        Enjoy the convenience of a single account across all participating
+        brands.
+      </p>
+      <h4>Mobile Number</h4>
+      <div id="mobile">
+        <span class="gray">+91 | </span>
+        <input id="input-no" placeholder="Enter your number" />
+        <br />
+      </div>
+      <p id="error">Please enter a valid 10 digit number</p>
+      <p class="gray">
+        By creating your account you agree to our
+        <a href="#">Terms and Conditions </a>
+      </p>
+
+      <button id="submit" onclick="isubmit()">CONTINUE</button>
+    </div>
+
+    <div id="success">
+      <h1>Sign up or Sign in</h1>
+      <p class="gray">
+        Enjoy the convenience of a single account across all participating
+        brands.
+      </p>
+      <h2>Verify with OTP</h2>
+      <p class="gray">sent to: <span id="no" class="gray"></span></p>
+      <div id="otpbar">
+        <div class="otp"></div>
+        <div class="otp"></div>
+        <div class="otp"></div>
+        <div class="otp"></div>
+      </div>
+      <p><a href="#">Didn't get it? Resend</a></p>
+    </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
